@@ -1,0 +1,188 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* common style and utilitis */
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+/* top player style */
+.top-players {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 3px;
+    margin-bottom: 30px;
+
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.players img {
+    height: 56px;
+    width: 56px;
+}
+
+.player-name {
+    padding-left: 16px;
+    font-size: 18px;
+}
+
+/* top blog style */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnil img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+
+/* latest course style */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.courses .course {
+    margin-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.015);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.018);
+    padding: 4px 10px;
+
+
+}
+
+.courses .course-banner img {
+    height: 104px;
+    width: 100%;
+}
+
+.course-details h3 {
+    font-weight: 500;
+    font-size: 20.0336px;
+}
+
+.author {
+    color: #ED6B4F;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review {
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.review .filled {
+    color: #FFC014;
+}
+
+.review .empty {
+    color: #AEAEAE;
+}
+
+.review .rating {
+    margin-left: 10px;
+}
+
+.watch-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 2px 20px;
+    color: #FF4A60;
+}
+
+/* ----------------------------------
+media quarry and css responsive style 
+-------------------------------------*/
+
+/* medis quarry for small device */
+
+@media screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+    }
+}
+
+/* media quarry for medium device */
+@media screen and (min-width:688px) and (max-width:992px) {
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
